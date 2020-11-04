@@ -28,7 +28,7 @@ Lundi 2 novembre 2020 - 10h-12h30, 14h-17h, Meet
 
 Lundi 9 novembre 2020 - 10h Workshop avec Sarah Garcin
 
- Lundi 16 novembre 2020 - 10h Workshop avec Sarah Garcin
+Lundi 16 novembre 2020 - 10h Workshop avec Sarah Garcin
 
 Lundi 23 novembre 2020 - 10h
 
