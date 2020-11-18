@@ -34,8 +34,10 @@ class createPages extends Paged.Handler{
 				
 				// LE NOUVEAUTÉ EST ICI (on passe une référence au div et aussi un mot qui sera utilisé dans la fonction p5one)
 				p5one(div, "rect")
-				p5one(div, "ellipse")												// appeler la fonction p5one, envoyer le div (myContainer0)
+				p5one(div, "ellipse")										// appeler la fonction p5one, envoyer le div (myContainer0)
 				
+				p5two(div)													// on peut aussi appeler une deuxième fonction
+
 				// Crée un paragraphe, lui donne un id, appelle getText() (plus bas) et change le html du paragraphe
 				// le rajoute au div (après le p5)
 				var para 		= document.createElement('p');
@@ -77,22 +79,25 @@ function p5one(div, quelleforme) {											// dans une fonction qu'on appelle 
 	let myp5 = new p5(s, div);
 }
 
-// function p5two(div) {											// dans une fonction qu'on appelle au dessus
-// 	const s = ( p ) => {										// syntaxe pour l'instance mode
+// Une deuxième fonction
+function p5two(div) {											// dans une fonction qu'on appelle au dessus
+	const s = ( p ) => {										// syntaxe pour l'instance mode
 
-// 		p.setup = function() {
-// 		  p.createCanvas(400, 200);
-// 		  p.fill(255, 0, 0)	// random color
-// 		};
+		var x
+		p.setup = function() {
+		  p.createCanvas(400, 100);
+		  p.fill(0, 100, 0)	
+		  x = p.random(0, 380)
+		};
 	  
-// 		p.draw = function() {
-// 		  p.background(100);
-// 		  p.ellipse(100, 100, 50, 50);
-// 		};
-// 	}
+		p.draw = function() {
+		  p.background(100);
+		  p.ellipse(x, 25, 50, 10);
+		};
+	}
 
-// 	let myp5 = new p5(s, div);
-// }
+	let myp5 = new p5(s, div);
+}
 
 
 // fonction javascript qui choisit aléatoirement un mot depuis un array
