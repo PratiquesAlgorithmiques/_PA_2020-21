@@ -1,0 +1,39 @@
+#container {
+    display: grid;;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; /* 50% 1fr 1fr; */
+    grid-template-areas: 
+        "h h h"
+        "o s t"
+        "o f f";
+    /* width: calc(100vw - 20px); */
+    /* height: calc(100vh - 20px); */
+}
+
+.header {
+    background-color: aqua;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    grid-area: h;
+}
+
+.first {
+    background-color: bisque;
+    grid-area: o;
+}
+
+.second {
+    background-color: chartreuse;
+    grid-area: s;
+}
+
+.third {
+    background-color: deeppink;
+    grid-area: t;
+}
+
+.footer {
+    background-color: tomato;
+    grid-area: f;
+}
