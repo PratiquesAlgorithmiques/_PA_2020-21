@@ -8,12 +8,12 @@ function setup() {
 
     str = "I am feeling"
 }
-s
+
 function draw() {
 
     counter++
 
-    var one = document.getElementById(w"one")
+    var one = document.getElementById("one")
 
     // var temp = str.toUpperCase()
     // var temp = str + " " + counter
