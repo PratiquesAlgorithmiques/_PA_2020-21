@@ -1,18 +1,34 @@
 const app = require('express')();
 const http = require('http').createServer(app);
 
-app.get('/', (req, res) => {
-    var txt = getText();
-    res.send('<h1>' + txt + '</h1>');
-});
-
 http.listen(3000, () => {
-    console.log('listening on *:3000');
+    console.log('helllllllllo      localhost:3000');
+});
+
+/* ----------- */
+
+app.get('/', (req, res) => {
+    res.send('<h1>Hello world</h1>');
 });
 
 
-function getText() {
-    var simplelist = ["Hello", "What is your name?", "How are you?", "Do you like bots?"];
-    var i = Math.floor(Math.random() * simplelist.length);
-    return simplelist[i];
-}
+// // '/' = localhost:3000
+// app.get('/', (req, res) => {
+
+//     var arr = ['one', 'two', 'three', 'four']
+
+//     var i = Math.floor(Math.random() * arr.length);
+
+//     res.send('<h1>' + arr[i] + '</h1>');
+// });
+
+
+// app.get('/testme', (req, res) => {
+//     res.send('<h1>It works</h1>');
+// });
+
+// app.get('/testme2', (req, res) => {
+//     res.send('<h1>this is testme2</h1>');
+// });
+
+
