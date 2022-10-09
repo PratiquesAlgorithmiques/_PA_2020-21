@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: auto;  */
+    display: grid;
+    height: 100vh;
+}
+
+#projet1 {
+    background-color: aqua;
+}
+
+#projet2 {
+    background-color:coral;
+}
+
+#projet3 {
+    background-color:lime;
+}
